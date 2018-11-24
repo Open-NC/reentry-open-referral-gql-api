@@ -5,14 +5,7 @@ const session = require('express-session');
 const parseurl = require('parseurl');
 const cors = require('cors');
 
-/*
-  TASKS:
-    5. Decide how to deal with ordinals
-    6. Add configurations??
-*/
-
 const { merge } = require('lodash');
-
 const server = new ApolloServer({ 
   typeDefs: [
     require('./app_api/app_schema'),
